@@ -13,17 +13,16 @@ button.addEventListener("click", () => {
 
 
 
-    console.log(date);
-    console.log(time);
+    
 
-
-    const sound = new Audio("sound.wav");
+    
 
     function countdown() {
         const date = document.querySelector("#date").value;
     const time = document.querySelector("#time").value;
     const endDate = new Date(date + " " + time);
     document.querySelectorAll(".title")[2].innerText = endDate;
+    const sound = new Audio("sound.mp3");
 
         const end = new Date(endDate);
         const now = new Date;
